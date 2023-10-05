@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Chemistry Trainer</title>
+  </head>
+  <body>
+    <main class="settings">
+      <h2 class="settings__title">Результат</h2>
+      <div class="settings__form_mode_holder">
+        <p class="settings__result">
+          <span id="current_result">0</span><span class="dash">/</span>118
+        </p>
+      </div>
+      <div class="score_holder">
+        <p class="settings__wrong_score">
+          Допущено помилок:
+          <span id="wrong_display">0</span>
+        </p>
+        <p class="settings__best_score">
+          Найкращий результат на цьому пристрої:
+          <span id="score_display">0</span>
+        </p>
+      </div>
+      <button id="startgame">На головну</button>
+    </main>
+    <script src="./script/endgame.js"></script>
+  </body>
+</html>

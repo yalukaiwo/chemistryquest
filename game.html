@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/game.css" />
+    <title>Chemistry Trainer</title>
+  </head>
+  <body>
+    <main class="table">
+      <div class="table_holder">
+        <div class="timer"><p id="timer_counter">120</p></div>
+        <div class="score"><p id="score_counter">0</p></div>
+        <div class="middle_section">
+          <button class="start_button" id="start_game">Старт</button>
+          <div class="element_to_find" id="element_to_find">
+            <p>
+              <span class="find_text">Знайдіть:</span>
+              <span id="element_name"></span>
+            </p>
+          </div>
+        </div>
+        <div class="table_header">
+          <div class="header_side"></div>
+          <div class="group_id">I a</div>
+          <div class="group_id">II a</div>
+          <div class="group_id">III b</div>
+          <div class="group_id">IV b</div>
+          <div class="group_id">V b</div>
+          <div class="group_id">VI b</div>
+          <div class="group_id">VII b</div>
+          <div class="group_id no-br"></div>
+          <div class="group_id no-br no-bl">VIII b</div>
+          <div class="group_id no-bl"></div>
+          <div class="group_id">I b</div>
+          <div class="group_id">II b</div>
+          <div class="group_id">III a</div>
+          <div class="group_id">IV a</div>
+          <div class="group_id">V a</div>
+          <div class="group_id">VI a</div>
+          <div class="group_id">VII a</div>
+          <div class="group_id">VIII a</div>
+        </div>
+
+        <div class="table_row">
+          <div class="table_side">1</div>
+          <a target="_blank" class="table_element yellow" id="1"></a>
+          <a target="_blank" class="table_element blank"></a>
+          <a target="_blank" class="table_element blank"></a>
+          <a target="_blank" class="table_element blank"></a>
+          <a target="_blank" class="table_element blank"></a>
+          <a target="_blank" class="table_element blank"></a>
+          <a target="_blank" class="table_element blank"></a>
+          <a target="_blank" class="table_element blank"></a>
+          <a target="_blank" class="table_element blank"></a>
+          <a target="_blank" class="table_element blank"></a>
+          <a target="_blank" class="table_element blank"></a>
+          <a target="_blank" class="table_element blank"></a>
+          <a target="_blank" class="table_element blank"></a>
+          <a target="_blank" class="table_element blank"></a>
+          <a target="_blank" class="table_element blank"></a>
+          <a target="_blank" class="table_element blank"></a>
+          <a target="_blank" class="table_element blank"></a>
+          <a target="_blank" class="table_element yellow" id="2"></a>
+        </div>
+        <div class="table_row">
+          <div class="table_side">2</div>
+          <a target="_blank" class="table_element blue" id="3"></a>
+          <a target="_blank" class="table_element blue" id="4"></a>
+          <a target="_blank" class="table_element blank"></a>
+          <a target="_blank" class="table_element blank"></a>
+          <a target="_blank" class="table_element blank"></a>
+          <a target="_blank" class="table_element blank"></a>
+          <a target="_blank" class="table_element blank"></a>
+          <a target="_blank" class="table_element blank"></a>
+          <a target="_blank" class="table_element blank"></a>
+          <a target="_blank" class="table_element blank"></a>
+          <a target="_blank" class="table_element blank"></a>
+          <a target="_blank" class="table_element blank"></a>
+          <a target="_blank" class="table_element green" id="5"></a>
+          <a target="_blank" class="table_element yellow" id="6"></a>
+          <a target="_blank" class="table_element yellow" id="7"></a>
+          <a target="_blank" class="table_element yellow" id="8"></a>
+          <a target="_blank" class="table_element yellow" id="9"></a>
+          <a target="_blank" class="table_element yellow" id="10"></a>
+        </div>
+        <div class="table_row">
+          <div class="table_side">3</div>
+          <a target="_blank" class="table_element blue" id="11"></a>
+          <a target="_blank" class="table_element blue" id="12"></a>
+          <a target="_blank" class="table_element blank"></a>
+          <a target="_blank" class="table_element blank"></a>
+          <a target="_blank" class="table_element blank"></a>
+          <a target="_blank" class="table_element blank"></a>
+          <a target="_blank" class="table_element blank"></a>
+          <a target="_blank" class="table_element blank"></a>
+          <a target="_blank" class="table_element blank"></a>
+          <a target="_blank" class="table_element blank"></a>
+          <a target="_blank" class="table_element blank"></a>
+          <a target="_blank" class="table_element blank"></a>
+          <a target="_blank" class="table_element blue" id="13"></a>
+          <a target="_blank" class="table_element green" id="14"></a>
+          <a target="_blank" class="table_element yellow" id="15"></a>
+          <a target="_blank" class="table_element yellow" id="16"></a>
+          <a target="_blank" class="table_element yellow" id="17"></a>
+          <a target="_blank" class="table_element yellow" id="18"></a>
+        </div>
+        <div class="table_row">
+          <div class="table_side">4</div>
+          <a target="_blank" class="table_element blue" id="19"></a>
+          <a target="_blank" class="table_element blue" id="20"></a>
+          <a target="_blank" class="table_element blue" id="21"></a>
+          <a target="_blank" class="table_element blue" id="22"></a>
+          <a target="_blank" class="table_element blue" id="23"></a>
+          <a target="_blank" class="table_element blue" id="24"></a>
+          <a target="_blank" class="table_element blue" id="25"></a>
+          <a target="_blank" class="table_element blue" id="26"></a>
+          <a target="_blank" class="table_element blue" id="27"></a>
+          <a target="_blank" class="table_element blue" id="28"></a>
+          <a target="_blank" class="table_element blue" id="29"></a>
+          <a target="_blank" class="table_element blue" id="30"></a>
+          <a target="_blank" class="table_element blue" id="31"></a>
+          <a target="_blank" class="table_element green" id="32"></a>
+          <a target="_blank" class="table_element green" id="33"></a>
+          <a target="_blank" class="table_element yellow" id="34"></a>
+          <a target="_blank" class="table_element yellow" id="35"></a>
+          <a target="_blank" class="table_element yellow" id="36"></a>
+        </div>
+        <div class="table_row">
+          <div class="table_side">5</div>
+          <a target="_blank" class="table_element blue" id="37"></a>
+          <a target="_blank" class="table_element blue" id="38"></a>
+          <a target="_blank" class="table_element blue" id="39"></a>
+          <a target="_blank" class="table_element blue" id="40"></a>
+          <a target="_blank" class="table_element blue" id="41"></a>
+          <a target="_blank" class="table_element blue" id="42"></a>
+          <a target="_blank" class="table_element blue" id="43"></a>
+          <a target="_blank" class="table_element blue" id="44"></a>
+          <a target="_blank" class="table_element blue" id="45"></a>
+          <a target="_blank" class="table_element blue" id="46"></a>
+          <a target="_blank" class="table_element blue" id="47"></a>
+          <a target="_blank" class="table_element blue" id="48"></a>
+          <a target="_blank" class="table_element blue" id="49"></a>
+          <a target="_blank" class="table_element blue" id="50"></a>
+          <a target="_blank" class="table_element green" id="51"></a>
+          <a target="_blank" class="table_element green" id="52"></a>
+          <a target="_blank" class="table_element yellow" id="53"></a>
+          <a target="_blank" class="table_element yellow" id="54"></a>
+        </div>
+        <div class="table_row">
+          <div class="table_side">6</div>
+          <a target="_blank" class="table_element blue" id="55"></a>
+          <a target="_blank" class="table_element blue" id="56"></a>
+          <a target="_blank" class="table_element blue" id="57"></a>
+          <a target="_blank" class="table_element blue" id="72"></a>
+          <a target="_blank" class="table_element blue" id="73"></a>
+          <a target="_blank" class="table_element blue" id="74"></a>
+          <a target="_blank" class="table_element blue" id="75"></a>
+          <a target="_blank" class="table_element blue" id="76"></a>
+          <a target="_blank" class="table_element blue" id="77"></a>
+          <a target="_blank" class="table_element blue" id="78"></a>
+          <a target="_blank" class="table_element blue" id="79"></a>
+          <a target="_blank" class="table_element blue" id="80"></a>
+          <a target="_blank" class="table_element blue" id="81"></a>
+          <a target="_blank" class="table_element blue" id="82"></a>
+          <a target="_blank" class="table_element blue" id="83"></a>
+          <a target="_blank" class="table_element green" id="84"></a>
+          <a target="_blank" class="table_element yellow" id="85"></a>
+          <a target="_blank" class="table_element yellow" id="86"></a>
+        </div>
+        <div class="table_row">
+          <div class="table_side">7</div>
+          <a target="_blank" class="table_element blue" id="87"></a>
+          <a target="_blank" class="table_element blue" id="88"></a>
+          <a target="_blank" class="table_element blue" id="89"></a>
+          <a target="_blank" class="table_element blue" id="104"></a>
+          <a target="_blank" class="table_element blue" id="105"></a>
+          <a target="_blank" class="table_element blue" id="106"></a>
+          <a target="_blank" class="table_element blue" id="107"></a>
+          <a target="_blank" class="table_element blue" id="108"></a>
+          <a target="_blank" class="table_element blue" id="109"></a>
+          <a target="_blank" class="table_element blue" id="110"></a>
+          <a target="_blank" class="table_element blue" id="111"></a>
+          <a target="_blank" class="table_element blue" id="112"></a>
+          <a target="_blank" class="table_element blue" id="113"></a>
+          <a target="_blank" class="table_element blue" id="114"></a>
+          <a target="_blank" class="table_element blue" id="115"></a>
+          <a target="_blank" class="table_element blue" id="116"></a>
+          <a target="_blank" class="table_element yellow" id="117"></a>
+          <a target="_blank" class="table_element yellow" id="118"></a>
+        </div>
+      </div>
+
+      <div class="additional_table">
+        <div class="table_row">
+          <a target="_blank" class="table_element blue" id="58"></a>
+          <a target="_blank" class="table_element blue" id="59"></a>
+          <a target="_blank" class="table_element blue" id="60"></a>
+          <a target="_blank" class="table_element blue" id="61"></a>
+          <a target="_blank" class="table_element blue" id="62"></a>
+          <a target="_blank" class="table_element blue" id="63"></a>
+          <a target="_blank" class="table_element blue" id="64"></a>
+          <a target="_blank" class="table_element blue" id="65"></a>
+          <a target="_blank" class="table_element blue" id="66"></a>
+          <a target="_blank" class="table_element blue" id="67"></a>
+          <a target="_blank" class="table_element blue" id="68"></a>
+          <a target="_blank" class="table_element blue" id="69"></a>
+          <a target="_blank" class="table_element blue" id="70"></a>
+          <a target="_blank" class="table_element blue" id="71"></a>
+        </div>
+      </div>
+      <div class="additional_table">
+        <div class="table_row">
+          <a target="_blank" class="table_element blue" id="90"></a>
+          <a target="_blank" class="table_element blue" id="91"></a>
+          <a target="_blank" class="table_element blue" id="92"></a>
+          <a target="_blank" class="table_element blue" id="93"></a>
+          <a target="_blank" class="table_element blue" id="94"></a>
+          <a target="_blank" class="table_element blue" id="95"></a>
+          <a target="_blank" class="table_element blue" id="96"></a>
+          <a target="_blank" class="table_element blue" id="97"></a>
+          <a target="_blank" class="table_element blue" id="98"></a>
+          <a target="_blank" class="table_element blue" id="99"></a>
+          <a target="_blank" class="table_element blue" id="100"></a>
+          <a target="_blank" class="table_element blue" id="101"></a>
+          <a target="_blank" class="table_element blue" id="102"></a>
+          <a target="_blank" class="table_element blue" id="103"></a>
+        </div>
+      </div>
+    </main>
+    <script src="./script/game.js" type="module"></script>
+  </body>
+</html>

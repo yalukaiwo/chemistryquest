@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Chemistry Trainer</title>
+  </head>
+  <body>
+    <main class="settings">
+      <h2 class="settings__title">Налаштування</h2>
+      <div class="settings__form_mode_holder">
+        <p class="settings__form_placeholder">Режим гри:</p>
+        <select class="settings_form_mode" id="mode_select">
+          <option value="name" selected id="option_name">
+            Назви елементів
+          </option>
+          <option value="symbol" id="option_symbol">Символи елементів</option>
+        </select>
+      </div>
+      <p class="settings__best_score">
+        Найкращий результат на цьому пристрої:
+        <span id="score_display">0</span>
+      </p>
+      <button id="startgame">Почати</button>
+    </main>
+    <script src="./script/index.js"></script>
+  </body>
+</html>
